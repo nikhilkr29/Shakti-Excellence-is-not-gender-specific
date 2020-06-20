@@ -1,0 +1,11 @@
+legend{
+    font-size: x-large;
+    text-align: center;
+    color: red;
+}
+body{
+    background: url("lady.jpg");
+    background-size: cover;
+    color: cyan;
+    text-align:center;
+}

@@ -1,0 +1,353 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="loan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  
+</head>
+  
+  
+  
+    <body>
+
+
+
+
+
+
+
+
+
+        <a class="pu" href="index.html"> <i class="fa fa-home" aria-hidden="true"></i>     Home</a>
+
+
+
+
+
+
+    <div class="container">
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="mw.jpg" alt="" width="152" height="92">
+          <h2>Registration Form</h2>
+          <p class="lead">Please mention the account details of the account linked with the organization.<br>Fields Mark with # will be used for verification.Field mark with @ must be unique and should be mentioned as provided by the goverment.Field marked with * are to be created by user and will be asked at the time of login.
+            Please mention valid details.
+              <br>No data shall be disclosed to any 3rd party under any circumstances.</p>
+        </div>
+      
+      
+          
+          <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Basic Information </h4>
+            <form action="connect.php" method="post">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">Full name of Head of NGO</label>
+                    
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Eg:   Reema Kumari " value="" required>
+                  <small class="text-muted">Full name without any abbreviations as mentioned in Aadhar card/bank details</small>
+                  <div class="invalid-feedback">
+                    Valid full name is required.
+                  </div>
+                </div>
+                
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">Full name of Non Goverment Organization</label>
+                      
+                    <input type="text" class="form-control" id="firstName" name="NGOName" placeholder="Eg:Mahila Vikas Organization" value="" required>
+                    <small class="text-muted">Without any abbreviations </small>
+                    <div class="invalid-feedback">
+                      Valid name of organization is required.
+                    </div>
+                  </div>
+                  
+                  </div>
+              </div>
+
+              
+
+
+
+              
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">Aadhar Card Number of Ngo President</label>
+                    
+                  <input type="text" class="form-control" id="firstName" name="AadharNum"placeholder="Eg: 2380-2837-23818-12979 " value="" required>
+                  <small class="text-muted">including - in between four digits</small>
+                  <div class="invalid-feedback">
+                    Enter Valid Adhar Card Number.
+                  </div>
+                </div>
+                
+                </div>
+            
+
+      
+              <div class="mb-3">
+                <label for="username">Unique Non Goverment Organization Id</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="user-id" name="UNGOI" placeholder="Unique Id is ID obtained after registering your group as a Ngo." required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your unique user-id is required.
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="mb-3">
+                <label for="username">User Name</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">*</span>
+                  </div>
+                  <input type="text" class="form-control" id="username" name="userid" placeholder="This is the name by which you will login" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Write a valid username
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mb-3">
+                <label for="password">Password</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">*</span>
+                  </div>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Create a Strong password" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                      Password not enterd
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mb-3">
+                <label for="email">Email <span class="text-muted"></span></label>  <div class="input-group-prepend"><span class="input-group-text">#</span>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+      
+              <div class="mb-3">
+                <label for="address">Address of Main Branch of Ngo</label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                  Please enter your  address.
+                </div>
+              </div>
+      
+              <div class="mb-3">
+                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment or suite">
+              </div>
+
+              <div class="row">
+                <div class="col-md-5 mb-3">
+              
+
+
+
+
+
+
+      
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="country">Country</label>
+                  <select class="custom-select d-block w-100" id="country" name="country" required>
+                    <option value="">Choose...</option>
+                    <option>India</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select  country.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="state">State</label>
+                  <select class="custom-select d-block w-100" id="state" name="state" required>
+                    <option value="">Choose...</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh </option>
+
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+
+                  
+
+                    
+
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="zip">Pin-Code</label>
+                  <input type="text" class="form-control" id="zip" name="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Pin-code required.
+                  </div>
+                </div>
+              </div>
+              <hr class="mb-4">
+                        <h4>Bank Details of your Organization</h4>
+              <hr class="mb-4">
+      
+              <h5 class="mb-3">Name of Bank</h5>
+      
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                  <input id="credit" type="radio" class="custom-control-input" checked required name="bank" value="state bank of india">
+                  <label class="custom-control-label" for="credit">State Bank of India</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="debit" type="radio" class="custom-control-input" required name="bank" value="union bank of india">
+                  <label class="custom-control-label" for="debit">Union Bank of India</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="paypal" type="radio" class="custom-control-input" required name="bank" value="canara bank">
+                  <label class="custom-control-label" for="paypal">Canara Bank</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="oth" type="radio" class="custom-control-input" required name="bank" value="Others">
+                    <label class="custom-control-label" for="oth">Others</label>
+                  </div>
+
+
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cc-name">Account Holder Name</label>
+                  <input type="text" class="form-control" id="cc-name" name="cc_name" placeholder="" required>
+                  <small class="text-muted">Full name without any abbreviations as mentioned in bank details</small>
+                  <div class="invalid-feedback">
+                    Name  is required
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                  <label for="cc-number">Account number</label>
+                  <input type="text" class="form-control" id="cc-number" name="cc_number" placeholder="" required>
+                  <div class="invalid-feedback">
+                   Account  number is required
+                  </div>
+                </div>
+              </div>
+
+
+           
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="row">
+              </div>
+              </div>
+               <hr class="mb-4">
+              <button class="btn btn-outline-success  btn-block" type="submit" name='register'>Sign-up</button>
+            </form>
+          </div>
+        </div>
+      
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">&copy; 2020-2029 BYTERS</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </ul>
+        </footer>
+      </div>
+      
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

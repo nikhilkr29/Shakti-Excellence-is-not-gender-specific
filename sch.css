@@ -1,0 +1,27 @@
+@import "https://fonts.googleapis.com/css?family=Dancing+Script&display=swap";
+@import "https://fonts.googleapis.com/css?family=Caveat&display=swap";
+@import "https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script&display=swap";
+@import "https://fonts.googleapis.com/css?family=Caveat|Gelasio|Kaushan+Script&display=swap";
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+
+
+.qs{
+
+
+    background: url(map1.png);
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: floralwhite;
+}
+
+
+.glow {
+    font-size: 80px;
+    color: #6F0252;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }

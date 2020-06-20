@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+
+
+    <title>Dynamic Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<form action="connect2.php" method="POST">
+    <script type="text/javascript">
+    
+    
+        $(document).ready(function(){
+
+            $("#newrows").click(function(){
+
+                    var addcontrols="<tr>"
+                        addcontrols+= "<td><input type='text' name='SNo'  placeholder='Enter S.No...'></td>" 
+                        addcontrols+= "<td><input type='text' name='Name'  placeholder='Name of SHG'></td>"
+                        addcontrols+="<td><input type='text' name='State'  placeholder='State of SHG'></td>" 
+                        addcontrols+="<td><input type='text' name='District'  placeholder='District of SHG'></td>" 
+                        addcontrols+="<td><input type='text' name='RegNo'  placeholder='Enter SHG Reg. Number...'></td>" 
+                        addcontrols+="<td><input type='text' name='NumberAsc'  placeholder='7'></td>"
+                        addcontrols+="<td><input type='text' name='married'  placeholder='4'></td>"
+                        addcontrols+="<td><input type='text' name='age'  placeholder='28'></td>"
+                        addcontrols+="<td><input type='text' name='BankAccNumber'  placeholder='234545641'></td>" 
+                        addcontrols+="<td><input type='text' name='Prev'  placeholder='5'></td>" 
+                        addcontrols+="<td><input type='text' name='intprev'  placeholder='7%'></td>" 
+                         
+                         addcontrols+="<td><input type='text' name='repay'  placeholder='20'></td>" 
+                         
+                         addcontrols+="<td><input type='text' name='curint'  placeholder='8%'></td>" 
+
+                          addcontrols+="<td><input type='text' name='Time'  placeholder='18'></td>" 
+                          addcontrols+="<td><input type='text' name='Aadhar'  ></td>" 
+                          addcontrols+="<td><input type='text' name='Contact'  ></td>" 
+                          addcontrols+="<td><input type='text' name='Aadhar2'  ></td>" 
+                          addcontrols+="<td><input type='text' name='Contact2' ></td>" 
+                         
+                       
+                        addcontrols+="</tr>";
+
+                        $("table tbody").append(addcontrols);
+
+
+            });
+
+
+
+
+
+
+        });
+    
+    
+    
+    </script>
+
+
+
+</form>
+
+
+
+</head>
+
+
+<body>
+
+
+<table border="1">
+
+
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name of Self Help Group</th>
+            <th>State of Self Help Group</th>
+            <th>District of Self Help Group</th>
+            <th>Self Help Group Registration Number</th>
+            <th>Number of Womens Associated in the Self Help Group</th>
+            <th>Number of Married Womens Associated in the Self Help Group</th>
+            <th>Average age of Womens Associated in the Self Help Group</th>
+            <th>Bank Account Number</th>
+            <th>Previous Total Loan Amount</th>
+            <th>Interest on which past loan was given(in %)</th>
+            <th>Months Taken to repay previous loan amount</th>
+            <th>Interest on which present loan is given(in %)</th>
+            <th>Time duration for which present loan is given(in months)</th>
+            <th>Interest on which loan is given(in %)</th>
+            <th>Time duration for which loan is given(in months)</th>
+
+            <th>Aadhar Card Number of Self help group leader</th>
+            <th>Mobile Number of SHG</th>
+
+        </tr>
+  </thead>
+  
+  <tbody>  </tbody>
+  <tfoot>
+    <tr>
+        <td><input type="button" value="Add New Row" id="newrows"></td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

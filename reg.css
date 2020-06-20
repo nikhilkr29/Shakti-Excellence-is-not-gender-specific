@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding: 0px;
+ 
+}
+
+.image{
+
+    position: absolute;
+    top:35%;
+    left:43%;
+    
+}
+
+.he{
+
+    position: absolute;
+    top:15%;
+    left:36%;
+    font-family: cursive;
+
+}
+
+.hem{
+    font-family: cursive;
+    left:20%;
+    top:80%;
+    size:80px;
+    color: darkblue;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+
+.fa{
+
+
+    left: 50%;
+    color:darkcyan;
+    size: 80px;
+}

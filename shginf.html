@@ -1,0 +1,318 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="loan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  
+</head>
+  
+  
+  
+    <body>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+    <div class="container">
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="panlo.png" alt="" width="152" height="92">
+          <h2>Self Help Group Entry Form</h2>
+        
+              <br>No data shall be disclosed to any 3rd party under any circumstances.</p>
+        </div>
+      
+      
+          
+          <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Basic Information </h4>
+            <form action="connect.php" method="post">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label name='SNo'>S.no</label>
+                    
+                  <input type="text" class="form-control"  name="Name" placeholder="mahila vikash " value="" required>
+                  
+                  <div class="invalid-feedback">
+                    Valid name is required.
+                  </div>
+                </div>
+                
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">Full name of Non Goverment Organization</label>
+                      
+                    <input type="text" class="form-control" id="firstName" name="NGOName" placeholder="Eg:Mahila Vikas Organization" value="" required>
+                    <small class="text-muted">Without any abbreviations </small>
+                    <div class="invalid-feedback">
+                      Valid name of organization is required.
+                    </div>
+                  </div>
+                  
+                  </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                  <label for="state" name='State'>State</label>
+                  <select class="custom-select d-block w-100" id="state" name="state" required>
+                    <option value="">Choose...</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh </option>
+
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+
+                  
+
+                    
+
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+
+
+
+              
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label name='District' >District</label>
+                    
+                  <input type="text" class="form-control" id="firstName" name="AadharNum"placeholder="Eg: 2380-2837-23818-12979 " value="" required>
+                  <small class="text-muted">including - in between four digits</small>
+                  <div class="invalid-feedback">
+                    Enter Valid Adhar Card Number.
+                  </div>
+                </div>
+                
+                </div>
+            
+
+      
+              <div class="mb-3">
+                <label name= name='RegNo'>Unique Non Goverment Organization Id</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="user-id" name="UNGOI" placeholder="Unique Id is ID obtained after registering your group as a Ngo." required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your unique user-id is required.
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="mb-3">
+                <label  name='NumberAsc'>Number of women associated</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">*</span>
+                  </div>
+                  <input type="text" class="form-control" id="user-id" name="UNGOI" placeholder="Unique Id is ID obtained after registering your group as a Ngo." required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your unique user-id is required.
+                  </div>
+                  
+
+
+              <div class="mb-3">
+                <label name='married'>Maritial Status</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">*</span>
+                  </div>
+               
+                </div>
+              </div>
+
+
+              <div class="mb-3">
+                <label  name='age'>Age </label>  
+                
+              </div>
+      
+              <div class="mb-3">
+                <label name='BankAccNumber'>Bank Acc Number</label>
+               
+              </div>
+      
+              
+             
+              
+
+
+
+
+
+
+      
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label name='Prev'>Prev Total Loan Amount</label>
+               
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                  <label  name='intprev'>Previous Interest Rate</label>
+                 
+                </div>
+
+
+
+                  </div>
+                
+                <div class="col-md-3 mb-3">
+                  <label  name='repay'>Months Taken to repay prev loan</label>
+                 
+                </div>
+              
+
+                <div class="col-md-3 mb-3">
+                  <label  name='curint'>Current Interest Rate</label>
+                 
+                </div>
+              
+               <div class="col-md-3 mb-3">
+                  <label name='Time'>Time duration of loan</label>
+                 
+                </div>
+               <div class="col-md-3 mb-3">
+                  <label name='Aadhar'>Aadhar card No of Shg leader</label>
+                 
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <label name='Contact'>Contacts</label>
+                 
+                </div>
+             
+             <div class="col-md-3 mb-3">
+                  <label name='Contact'>Contacts</label>
+                 
+                </div>
+      
+             
+      
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="row">
+              </div>
+              </div>
+               <hr class="mb-4">
+              <button class="btn btn-outline-success  btn-block" type="submit" name='register'>Sign-up</button>
+            </form>
+          </div>
+        </div>
+      
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">&copy; 2020-2029 BYTERS</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </ul>
+        </footer>
+      </div>
+      
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

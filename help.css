@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+  }
+   
+  body{
+    background: url('help.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+  }
+   
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+  }
+   
+  .contact-form{
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+   
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+   
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+   
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #eff8f3;
+    padding: 10px;
+    color: #ffffff;
+    width: 100%;
+  }
+   
+  .msg textarea{
+    height: 212px;
+  }
+   
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+  }
+   
+  .btn {
+      background: #39dd41;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+  .pu{
+    position: absolute;
+    top: 0%;
+    right:2%;
+    font-family:cursive;
+    font-size: 35px;
+    color: #08fff3;
+}
+
+
+
+.fa{
+    
+    text-decoration: none;
+
+    left: 50%;
+}
+   
+  @media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }

@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EMI Calculator</title>
+
+<!-- import bootstrap css -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<style>
+  @import"https://fonts.googleapis.com/css?family=Inria+Serif&display=swap";
+  *{
+    font-size: 27px;
+    font-family: Inria Serif;
+  }
+  .container{
+     width:200%;
+     margin-left: 200px;
+  }
+h1{
+ color:rgb(47, 0, 255);
+ font-size: 50px;
+ text-align: center;
+}
+#wrapper{
+  border: 4mm ridge rgb(15, 125, 252);
+  box-shadow: 10px 5px 5px rgb(0, 4, 255);
+ padding-bottom:20px;
+ margin-top:10%;
+ 
+}
+</style>
+</head>
+
+<body>
+ <div class="container">
+ <div id="wrapper" class="col-lg-4">
+ <h1>Loan Calculator </h1>
+   <table width="95%" align="center">
+    <tr>
+    <td width="147"> Loan Amount :  </td>
+     <td width="193"> <input type="number" id="prncipleAmount" name="prncipleAmount" required class="form-control" placeholder="Enter Loan Amount"/> </td> 
+    </tr>
+    <tr>
+    <td> Interest Rate :</td>
+     <td width="193" style="padding-top:10px;"> <input type="number" id="InterestRate" name="InterestRate" required class="form-control" placeholder="Enter Rate of Interest"/> </td>
+    </tr>
+    <tr>
+    <td>
+      Loan Period (in month):
+    </td>
+     <td style="padding-top:10px;">
+       <input type="number" id="emiMonth" name="emiMonth" required class="form-control" placeholder="Enter Period in Month"/>
+     </td>
+    
+    </tr>
+    <tr>
+      <td style="padding-top:10px; " colspan="2">
+       <button class="btn btn-success btn-block" onclick="EmiCalculaor();"> Find EMI </button>
+     </td>
+    </tr>
+   </table>
+
+  <div id="result" align="center" style="color:rgb(253, 5, 5);margin-top:20px;">    </div></div>
+ </div>
+
+<!-- script for calculating EMI -->
+<script>
+function EmiCalculaor(){
+    
+   
+ var month = $("#emiMonth").val();
+ var rate = $("#InterestRate").val();
+ var pamt = $("#prncipleAmount").val();
+  
+  var monthlyInterestRatio = (rate/100)/12;
+  var monthlyInterest = (monthlyInterestRatio*pamt);
+     var top = Math.pow((1+monthlyInterestRatio),month);
+         var bottom = top -1;
+         var sp = top / bottom;
+         var emi = ((pamt * monthlyInterestRatio) * sp);
+  var result = emi.toFixed(2);
+  var totalAmount = emi*month;
+  var yearlyInteret = totalAmount-pamt;
+  var downPayment = pamt*(20/100);
+     //alert(emi);
+  $("#result").empty();
+  $("#result").append("Your EMI = "+result);
+    
+}
+</script>
+</body>
+</html>

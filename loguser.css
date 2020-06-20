@@ -1,0 +1,69 @@
+body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding:0;
+	background-color: #073585;
+    background-image: url(bck.jpeg);
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+.con{
+	height: 100vh;
+	padding-top: 8vh;
+	width: inherit;
+	margin: 0;
+}
+hr{
+	width:30vw;
+	background-color: #aaa5a5;
+	border: .8px solid #aaa5a5;
+}
+.signup {
+	border: 0.8px solid #000405;
+	border-radius: 1cm;
+    min-height: 55vh;
+	margin: auto;
+	margin-top: 10vh;
+    width: 40vw;
+	background: #08070a81;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 15px;
+}
+#sp{
+	font-weight: 700;
+	font-size: 2em;
+}
+label{
+	margin: 10px;
+}
+#btn{
+	border: 1px solid #11a8f3;
+	border-radius: .5cm;
+	color: #11a8f3;
+	outline: none;
+    background-color: #eee;
+    height: 35px;
+	width: 18vh;
+	font-size: 1.2rem;
+	font-weight: 700;
+	transition: .3s;
+}
+#btn:hover{
+	color: #eee;
+	background: #11a8f3;
+	border-color: #eee;
+}
+.bdr{
+	border: 1.5px solid #0627fd;
+	outline: none;
+	border-radius: .5cm;
+	padding: 10px;
+	width: 20vw;
+	margin: 10px;
+	border-spacing: 30px;
+}

@@ -1,0 +1,75 @@
+body{
+
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+    color: rgb(247, 3, 3);
+    background: url("bck.jpeg") ;
+    
+    opacity: 1;
+    background-size:cover;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){ 
+
+    background-size:cover;
+    flex-direction:column;
+}
+.btn{
+
+    position: absolute;
+    size: 800px;
+    border: brown;
+    border-radius: 4px;
+    color:rgba(7, 6, 6, 0.801));
+    left:40%;
+    background-color: blueviolet;
+    
+}
+
+.btn-primary{
+
+
+    top:30%;
+    left: 40%;
+    color: rgb(255, 0, 0);
+    width: 400px;
+    height: 100px;
+    height: 40px;
+    width: auto;
+
+}
+
+.btn-success{
+
+
+    position: absolute;
+    top:75%;
+    left: 40%;
+    color:rgb(2, 12, 2);
+    font-size: small;
+    width: 300px;
+    height: 40px;
+    background-image: linear-gradient(to bottom, #ff8dc6, #cfa3f7, #83baff, #28c9fc, #32d1d7););
+    border-radius: 10px 100px / 120px;
+}
+
+
+.btn-success:hover{
+
+
+    position: absolute;
+    top:75%;
+    left: 40%;
+    color:rgb(3, 3, 3);
+    font-size: small;
+    width: 300px;
+    height: 40px;
+    background-color: crimson;
+    border-radius: 10px 100px / 120px;
+}

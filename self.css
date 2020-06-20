@@ -1,0 +1,22 @@
+.pu{
+
+    position: absolute;
+    color: #6ecc6e;
+    margin-left: auto;
+    
+    size: 50px;
+    text-decoration: none;
+    
+}
+
+
+.fa{
+
+
+    left: 50%;
+    color:darkcyan;
+    size: 20px;
+}
+.h2{
+    font-color:red;
+}
